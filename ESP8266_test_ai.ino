@@ -1,7 +1,7 @@
 #define DEBUG true
 
 String sendData(String command, const int timeout, boolean debug){
-    String response = "";
+    String response = "";	//
     Serial1.print(command); // send the read character to the esp8266
     long int time = millis();
     while( (time+timeout) > millis()){
